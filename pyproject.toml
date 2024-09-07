@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "djangoproject"
+version = "0.1.0"
+description = ""
+authors = ["jm-jung <jmsk7554@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+django = "^5.1.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+#함수를 호출하는 코드를 클라이언트 코드라고 지칭
+#함수를 수정했고 클라이언트 코드를 수정하지않아도 될때 하위호환성을 지키는 수정을 한다
+#ex 3.12.4// 3->major(하위호환성 X)/ 12->minor(여기까지 하위호환성 O)/ 4->patch
